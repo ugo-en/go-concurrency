@@ -14,6 +14,7 @@ func main() {
 
 	//  tells the WaitGroup that three goroutines is going to be added
 	// and it should wait for it to finish before proceeding further.
+	weight_group.Add(3)
 
 	go func() {
 		work()
